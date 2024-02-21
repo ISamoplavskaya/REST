@@ -9,7 +9,7 @@ public class UserService {
         userDAO.saveUser(user);
     }
 
-    public User getUser(int id) {
+    public User getUser(Long id) {
         return userDAO.getById(id);
     }
 
@@ -17,7 +17,7 @@ public class UserService {
         return userDAO.getAllUsers();
     }
 
-    public void delete(int id) {
+    public void delete(Long id) {
         userDAO.deleteById(id);
     }
 }
